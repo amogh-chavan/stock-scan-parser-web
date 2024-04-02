@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center;
+}
+
+.section {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+  list-style: none;
+  background-color: #01131b;
+  min-height: "auto";
+}
