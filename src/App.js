@@ -12,7 +12,9 @@ function App() {
     setError(null); // Clear any previous error
 
     try {
-      const response = await axios.get("http://localhost:5000/api/scans");
+      const response = await axios.get(
+        `${process.env.REACT_APP_SERVER_BASE_URL}/api/scans`
+      );
       console.log({ response });
       setData(response.data.data); // Update data state with response data
     } catch (error) {
