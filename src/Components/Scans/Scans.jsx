@@ -2,16 +2,12 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styles from "./Scans.module.scss";
 import Spinner from "../shared/Loader/Loader";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Scans = () => {
   // State management
   const [scansData, setStockScansData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
-  // Location
-  const location = useLocation();
-  const { detailObject } = location.state || {};
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,7 +45,7 @@ const Scans = () => {
         <Spinner />
       ) : (
         <>
-          {!detailObject && (
+          {
             <ol className={styles.list}>
               {scansData.map((scan) => {
                 return (
@@ -67,7 +63,7 @@ const Scans = () => {
                 );
               })}
             </ol>
-          )}
+          }
         </>
       )}
     </React.Fragment>
