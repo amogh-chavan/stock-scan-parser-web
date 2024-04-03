@@ -46,10 +46,7 @@ const Criteria = () => {
         <ol className={styles.list}>
           <div className={styles.header}>
             <div className={styles.text}>{name}</div>
-            <div
-              className={styles.subText}
-              style={{ color: color, fontWeight: "bold" }}
-            >
+            <div className={styles.subText} style={{ color: color }}>
               {tag}
             </div>
           </div>

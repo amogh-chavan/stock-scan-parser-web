@@ -17,7 +17,11 @@ const CriteriaVariableIndicator = () => {
           Set Parameters
         </div>
       </div>
-      <div className={style.CriteriaVariableIndicator__variable_indicator}>
+      <div
+        className={
+          style.CriteriaVariableIndicator__variable_indicator_container
+        }
+      >
         <div>
           <label>{variable.parameter_name}</label>
         </div>
