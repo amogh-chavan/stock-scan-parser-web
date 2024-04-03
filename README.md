@@ -1,6 +1,8 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/amogh-chavan/stock-scan-parser-web/assets/55050758/40b63a59-16fc-43de-a920-1c0903e35649)
+![image](https://github.com/amogh-chavan/stock-scan-parser-web/assets/55050758/a4391a9b-828e-4561-94a4-c5fe04f84baf)
+![image](https://github.com/amogh-chavan/stock-scan-parser-web/assets/55050758/b21a5238-d001-4abb-8f90-e1554170433c)
+![image](https://github.com/amogh-chavan/stock-scan-parser-web/assets/55050758/292c9df5-f9cf-4494-8cde-dd4f87600208)
+![image](https://github.com/amogh-chavan/stock-scan-parser-web/assets/55050758/947b96a1-27a7-4517-b5fa-ef943b3254f2)
 
 ## Available Scripts
 
