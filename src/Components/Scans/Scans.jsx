@@ -35,7 +35,7 @@ const Scans = ({ ...props }) => {
         setIsLoading(false); // Update data state with response data
       } catch (error) {
         console.error("Error fetching data:", error);
-        throw error;
+        setIsLoading(true);
       } finally {
         setIsLoading(false); // Set loading indicator to false (even on errors)
       }

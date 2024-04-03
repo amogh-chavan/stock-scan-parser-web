@@ -8,13 +8,15 @@ const CriteriaVariableValue = (props) => {
 
   return (
     <div className={style.criteria_variable}>
-      {variable?.values?.map((item, index) => {
-        return (
-          <p key={index} className={style.criteria_variable__value}>
-            {item}
-          </p>
-        );
-      })}
+      {variable?.values
+        ?.sort((a, b) => a - b)
+        .map((item, index) => {
+          return (
+            <p key={index} className={style.criteria_variable__value}>
+              {item}
+            </p>
+          );
+        })}
     </div>
   );
 };

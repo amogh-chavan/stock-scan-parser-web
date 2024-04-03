@@ -7,7 +7,7 @@ const Criteria = () => {
   const { scan } = location.state || {};
   const { name, color, tag, criteria } = scan || {};
 
-  const renderVariableText = (text, variable) => {
+  const renderCriteria = (text, variable) => {
     const words = text.split(/\s+/);
     return (
       <div className={styles.element}>
@@ -33,7 +33,7 @@ const Criteria = () => {
               </Link>
             );
           } else {
-            return <React.Fragment key={index}>{word}</React.Fragment>;
+            return <React.Fragment key={index}> {word} </React.Fragment>;
           }
         })}
       </div>
@@ -59,7 +59,7 @@ const Criteria = () => {
                 {index > 0 && <div className={styles.and}>and</div>}
                 <div className={styles.element}>
                   {element?.variable
-                    ? renderVariableText(element.text, element.variable)
+                    ? renderCriteria(element.text, element.variable)
                     : element.text}
                 </div>
               </div>

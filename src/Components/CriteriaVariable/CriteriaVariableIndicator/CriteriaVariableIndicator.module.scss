@@ -1,0 +1,18 @@
+.CriteriaVariableIndicator {
+  &__study_type {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  &__set_parameters {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  &__variable_indicator {
+    background-color: #fff;
+    min-height: 60px;
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
