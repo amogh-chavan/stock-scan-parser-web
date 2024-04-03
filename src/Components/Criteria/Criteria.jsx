@@ -20,10 +20,14 @@ const Criteria = () => {
               "";
             return (
               <Link
-                to={`/criteria/variable`}
+                to={
+                  variable?.[key]?.type === "value"
+                    ? "/criteria/variable/value"
+                    : "/criteria/variable/indicator"
+                }
                 className={styles.link}
                 key={index}
-                state={{ detailObject: variable?.[key] }}
+                state={{ variable: variable?.[key] }}
               >
                 ({variableValue})
               </Link>
