@@ -4,7 +4,7 @@ import styles from "./Scans.module.scss";
 import Spinner from "../shared/Loader/Loader";
 import { Link, useLocation } from "react-router-dom";
 
-const Scans = ({ ...props }) => {
+const Scans = () => {
   // State management
   const [scansData, setStockScansData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -35,7 +35,7 @@ const Scans = ({ ...props }) => {
         setIsLoading(false); // Update data state with response data
       } catch (error) {
         console.error("Error fetching data:", error);
-        setIsLoading(true);
+        setIsLoading(false);
       } finally {
         setIsLoading(false); // Set loading indicator to false (even on errors)
       }

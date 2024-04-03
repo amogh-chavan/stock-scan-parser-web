@@ -3,7 +3,7 @@
 }
 
 .listItem {
-  padding: 4px;
+  padding: 10px;
   border-bottom: 1px dotted white;
   .text {
     text-decoration: underline;
@@ -24,29 +24,3 @@
     cursor: pointer;
   }
 }
-
-// .parameterSection {
-//   .header {
-//     color: #fff;
-//     font-size: 1rem;
-//     font-weight: bolder;
-//     padding-bottom: 0.6rem;
-//   }
-//   .parameterText {
-//     color: #fff;
-//     font-size: 1rem;
-//     padding-bottom: 0.6rem;
-//   }
-//   .variableSection {
-//     background-color: #fff;
-//     min-height: 60px;
-//     font-size: 1.2rem;
-//     padding: 1rem;
-//   }
-//   .parameter {
-//     float: left;
-//   }
-//   .inputValue {
-//     float: right;
-//   }
-// }
